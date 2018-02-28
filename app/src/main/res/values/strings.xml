@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">2.ScoreCounter</string>
+    <string name="red_cards">RED \nCARDS</string>
+    <string name="num_yellow_A">0</string>
+    <string name="num_red_A">0</string>
+    <string name="goal">Goal</string>
+    <string name="num_yellow_b">0</string>
+    <string name="num_red_B">0</string>
+    <string name="num_score_b">0</string>
+    <string name="txt_score_B">SCORE</string>
+    <string name="txt_yellow_B">YELLOW \nCARDS</string>
+    <string name="txt_red_B">RED \nCARDS</string>
+    <string name="btn_goal_B">Goal</string>
+    <string name="btn_red_B">R</string>
+    <string name="btn_reset">RESET</string>
+    <string name="btn_yellow_B">Y</string>
+    <string name="num_score_A">0</string>
+    <string name="team_B">Team B</string>
+    <string name="team_A">Team A</string>
+    <string name="txt_score_A">SCORE</string>
+    <string name="txt_yellow_A">YELLOW \nCARDS</string>
+    <string name="btn_yellow_A">Y</string>
+    <string name="btn_red_A">R</string>
+    <string name="yellow_cards">YELLOW \nCARDS</string>
+    <string name="num_score_B">0</string>
+    <string name="score">SCORE</string>
+    <string name="team_b">Team B</string>
+    <string name="reset">RESET</string>
+    <string name="team_a">Team A</string>
+</resources>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/field2"
+    android:orientation="vertical"
+    tools:context="com.example.android.a2scorecounter.MainActivity">
+
+
+    <!--Left column-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" android:baselineAligned="false">
+
+        <LinearLayout
+            android:id="@+id/TeamA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#8c000000"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/teamA"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginVertical="0dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="@string/team_A"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="horizontal" android:baselineAligned="false">
+
+                <LinearLayout
+                    android:id="@+id/left_text_score_A"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_score_A"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:text="@string/txt_score_A"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txt_yellow_A"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/txt_yellow_A"
+                        android:textAlignment="gravity"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/txt_red_A"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/red_cards"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/left_numbers_score_A"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/num_score_A"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/num_score_A"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/num_yellow_A"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/num_yellow_A"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/num_red_A"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/num_red_A"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_goal_A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_goal"
+                android:onClick="addScoreTeamA"
+                android:text="@string/goal"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_yellow_A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_yellow"
+                    android:text="@string/btn_yellow_A"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btn_red_A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_red"
+                    android:text="@string/btn_red_A"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/teamB"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#8c000000"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/team_B"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginVertical="0dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="@string/team_B"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/right_numbers_score"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/num_score_B"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="20dp"
+                        android:layout_marginVertical="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/num_score_b"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/num_yellow_B"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/num_yellow_b"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/num_red_B"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/num_red_B"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/right_text_score_B"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_score_B"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="20dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_weight="1"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:includeFontPadding="true"
+                        android:text="@string/txt_score_B"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txt_yellow_B"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/txt_yellow_B"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/txt_red_B"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/txt_red_B"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_goal_B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_goal"
+                android:onClick="addScoreTeamA"
+                android:text="@string/btn_goal_B"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_yellow_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_yellow"
+                    android:text="@string/btn_yellow_B"
+                    android:textColor="@android:color/white"
+                    android:onClick="addScoreTeamB"/>
+
+                <Button
+                    android:id="@+id/btn_red_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_red"
+                    android:text="@string/btn_red_B"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#8c000000"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_goal"
+            android:text="@string/btn_reset"
+            android:textColor="@android:color/holo_red_dark" />
+    </LinearLayout>
+
+    <!--Right column-->
+
+
+</LinearLayout>
